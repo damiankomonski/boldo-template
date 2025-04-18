@@ -1,2 +1,444 @@
-// Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
+// Main variables
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-size-base: 1rem; // 16px;
+$body-color: #777777;
+
+// Grid variables
+// $grid-columns: 16;
+// $grid-gutter-width: 1.25rem;
+// $grid-breakpoints: (
+//     xs: 0,
+//     sm: 576px,
+//     md: 768px,
+//     lg: 992px,
+//     xl: 1200px
+// );
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1100px
+// );
+
+// Colors
+$primary: #0A2640;
+$dark: #242424;
+$success: #7FBC3B;
+
+// Headings variables
+$headings-font-weight: 400;
+$headings-color: #242424;
+$h1-font-size: 48px;
+$h2-font-size: 36px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$h6-font-size: 18px;
+
+// Buttons variables
+$btn-font-size: 20px;
+$btn-font-weight: 700;
+$btn-padding-y: 16px;
+$btn-padding-x: 32px;
+$btn-line-height: 28px;
+$btn-border-radius: 56px;
+
+// $btn-padding-y-lg: 20px;
+// $btn-padding-x-lg: 20px;
+// $btn-font-size-lg: 1rem;
+
+// $btn-padding-y-sm: .625rem;
+// $btn-padding-x-sm: 1rem;
+// $btn-font-size-sm: .8125rem;
+// $btn-border-radius-sm: .5rem;
+
+
+// Inputs variables
+$input-padding-y: 12px;
+$input-padding-x: 32px;
+$input-font-size: 16px;
+// $input-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+$input-border-radius: 80px;
+$input-focus-border-color: #969696;
+$input-border-width: 2px;
+
+// Select variables
+// $form-select-padding-y: 0.75rem;
+// $form-select-padding-x: 1.5rem;
+// $form-select-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+// $form-select-border-radius: 10px;
+
+// Navbar variables
+// $nav-link-font-size: 0.875rem;
+// $navbar-padding-y: 0;
+// $navbar-brand-padding-y: 0rem;
+
+// Tables variables
+// $table-cell-padding-y: 12px;
+// $table-cell-padding-x: 8px;
+// $border-color: #F3F3F3;
+// $table-cell-vertical-align: middle;
+// $table-border-width: 0.5px;
+// $table-th-font-weight: 500;
+
+// Checkboxes
+// $form-check-input-width: 20px;
+// $form-check-padding-start: 10px;
+// $form-check-input-border: 2px solid $primary;
+
+// Badges
+// $badge-padding-y: .25rem;
+// $badge-padding-x: 1rem;
+// $badge-border-radius: 6.25rem;
+// $badge-font-size: .9375rem;
+// $badge-font-weight: 400;
+// $badge-color: #ffffff;
+
+// Border
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  6: 6px,
+  8: 8px
+);
+
+// Modal
+// $modal-backdrop-bg: #ffffff;
+// $modal-backdrop-opacity: 1;
+// $modal-md: 540px;
+// $modal-content-border-width: 0;
+// $modal-content-border-radius: 24px;
+// $modal-inner-padding: 32px;
+
+// Spacing, margin, padding
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  2: .125rem,
+  4: .25rem,
+  8: .5rem,
+  10: $spacer * .625,
+  12: .75rem,
+  16: 1rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  28: 1.75rem,
+  32: 2rem,
+  36: 2.25rem,
+  40: 2.5rem,
+  44: 2.75rem,
+  48: 3rem,
+  52: 3.25rem,
+  56: 3.5rem,
+  60: 3.75rem,
+  64: 4rem,
+  68: 4.25rem,
+  72: 4.5rem,
+  76: 4.75rem,
+  80: 5rem,
+  84: 5.25rem,
+  88: 5.5rem, 
+  92: 92px,
+  96: 6rem, 
+  m1: -1px,  
+  m2: -2px,
+  m4: -4px,
+  m8: -8px, 
+  m12: -12px
+);
+
+// Font
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  8: 8px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  20: 20px, 
+  24: 24px,
+  28: 28px
+);
+
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Import Bootstrap 5
+@import "../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_variables-dark";
+
+// Colors
+$custom-theme-color: (
+  "primary-500": #0A2640, 
+  "primary-400": #1C3D5B,
+  "secondary-500": #65E4A3,
+  "grey-100": #F1F1F1,
+  "grey-200": #C4C4C4,
+  "grey-500": #777777
+);
+$theme-colors: map-merge($custom-theme-color, $theme-colors);
+
+@import "../../node_modules/bootstrap/scss/_maps";
+@import "../../node_modules/bootstrap/scss/_mixins";
+
+// Position values relative, absolute, top, left, right, bottom
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  24: 24px, 
+  28: 28px, 
+  32: 32px, 
+  36: 36px, 
+  40: 40px, 
+  44: 44px, 
+  48: 48px, 
+  52: 52px, 
+  56: 56px,
+  60: 60px, 
+  64: 64px,
+  m1: -1px,
+  m2: -2px,
+  m4: -4px,
+  m8: -8px
+);
+
+// values for height, width, max-height, min-width
+$sizes-values: (
+  25: 25%,
+  33: 33.33333333%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  24: 24px,
+  28: 28px,
+  32: 32px,
+  36: 36px,
+  40: 40px,
+  44: 44px,
+  48: 48px,
+  52: 52px,
+  56: 56px,
+  60: 60px,
+  64: 64px,
+  68: 68px,
+  72: 72px,
+  76: 76px,
+  80: 80px,
+  84: 84px,
+  88: 88px,
+  92: 92px,
+  96: 96px
+);
+
+@import "../../node_modules/bootstrap/scss/_utilities";
+
+// Utilities
+$utilities: map-merge(
+  $utilities, 
+  (
+    "width": (
+      property: width,
+      class: w,
+      responsive: true,
+      values: $sizes-values
+    ),
+    "height": (
+      property: height,
+      class: h,
+      responsive: true,
+      values: $sizes-values
+    ),
+    "min-height": (
+      property: min-height,
+      class: minh,
+      values: $sizes-values
+    ),
+    "max-height": (
+      property: max-height,
+      class: maxh,
+      values: $sizes-values
+    ),
+    "min-width": (
+      property: min-width,
+      class: minw,
+      values: $sizes-values
+    ),
+    "max-width": (
+      property: max-width,
+      class: maxw,
+      values: $sizes-values
+    ),
+    "flex-basis": (
+      property: flex-basis,
+      class: flex-basis,
+      responsive: true,
+      values: (
+        15: 15%,
+        20: 20%,
+        50: 50%,
+        100: 100%,
+        33: 33.33333%,
+        auto: auto
+      )
+    ),
+    "flex-grow": (
+      responsive: true,
+      property: flex-grow,
+      class: flex,
+      values: (
+        grow-0: 0,
+        grow-1: 1,
+        grow-initial: initial
+      )
+    ),
+    "font-size": (
+      rfs: false,
+      property: font-size,
+      class: fs,
+      responsive: true,
+      values: $font-sizes
+    ),
+    "z-index": (
+      property: z-index,
+      class: z-index,
+      responsive: true,
+      values: (
+        5: 5,
+        10: 10,
+        15: 15,
+        50: 50
+      )
+    ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),
+        2: var(--#{$prefix}border-radius),
+        3: var(--#{$prefix}border-radius-lg),
+        4: var(--#{$prefix}border-radius-xl),
+        5: var(--#{$prefix}border-radius-2xl),
+        8: 8px,
+        12: 12px,
+        16: 16px,
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
+    "rounded-bottom": (
+      property: border-bottom-right-radius border-bottom-left-radius,
+      class: rounded-bottom,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        8: 8px
+      )
+    ),
+    "shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        null: 0 4px 32px rgba(0, 0, 0, 0.08),
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg,
+        none: none,
+      )
+    ),
+    "border-bottom": (
+      property: border-bottom, 
+      responsive: true, 
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+        1: 1px var(--#{$prefix}border-style),
+        2: 2px var(--#{$prefix}border-style)
+      )
+    ),
+    "border-top": (
+      property: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+        1: 1px var(--#{$prefix}border-style),
+        2: 2px var(--#{$prefix}border-style)
+      )
+    ),
+    "background-size": (
+      property: background-size,
+      responsive: true,
+      class: background-size,
+      values: (
+        100: 100% auto,
+        cover: cover,
+        auto: auto
+      )
+    ),
+    "rounded-start": (
+      property: border-bottom-left-radius border-top-left-radius,
+      class: rounded-start,
+      values: (
+        null: var(--#{$prefix}border-radius),
+      )
+    ),
+    "background-repeat": (
+      property: background-repeat,
+      class: background-repeat,
+      values: (
+        "no-repeat": no-repeat
+      )
+    ),
+    "background-position": (
+      property: background-position,
+      class: background-position,
+      values: (
+        "top-center": top center
+      )
+    ),
+    "rounded-top": (
+      property: border-top-left-radius border-top-right-radius,
+      class: rounded-top,
+      values: (
+        null: var(--#{$prefix}border-radius)
+      )
+    ),
+    "box-sizing": (
+      property: box-sizing,
+      class: box-sizing,
+      values: (
+        content-box: content-box
+      )
+    )
+  )
+);
+
+// Import Bootstrap 5
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import
+@import "fonts.scss";
+@import "general.scss";
+@import "navbar.scss";
