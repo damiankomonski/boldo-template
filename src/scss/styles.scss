@@ -170,9 +170,9 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 // Import Bootstrap 5
-@import "../../node_modules/bootstrap/scss/_functions.scss";
-@import "../../node_modules/bootstrap/scss/_variables";
-@import "../../node_modules/bootstrap/scss/_variables-dark";
+@import "bootstrap/scss/_functions.scss";
+@import "bootstrap/scss/_variables";
+@import "bootstrap/scss/_variables-dark";
 
 // Colors
 $custom-theme-color: (
@@ -185,8 +185,8 @@ $custom-theme-color: (
 );
 $theme-colors: map-merge($custom-theme-color, $theme-colors);
 
-@import "../../node_modules/bootstrap/scss/_maps";
-@import "../../node_modules/bootstrap/scss/_mixins";
+@import "bootstrap/scss/_maps";
+@import "bootstrap/scss/_mixins";
 
 // Position values relative, absolute, top, left, right, bottom
 $position-values: (
@@ -253,7 +253,7 @@ $sizes-values: (
   96: 96px
 );
 
-@import "../../node_modules/bootstrap/scss/_utilities";
+@import "bootstrap/scss/_utilities";
 
 // Utilities
 $utilities: map-merge(
@@ -436,7 +436,7 @@ $utilities: map-merge(
 );
 
 // Import Bootstrap 5
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap.scss";
 
 // Import
 @import "fonts.scss";
