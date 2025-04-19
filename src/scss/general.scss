@@ -4,11 +4,11 @@ body{
 
 // ----------------------------- Headings -----------------------------
 h1{
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 h2{
-
+  margin-bottom: 40px;
 }
 
 h3{
@@ -49,14 +49,13 @@ h5{
     }
 
     &-secondary{
-      background: none;
-      border: 2px solid $primary;
-      color: $primary;
+      background: map-get($theme-colors, secondary-500);
+      color: #fff;
+      transition: background 0.3s ease-in-out;
+      border: none;
 
       &:hover{
-        color: #F56629;
-        background: none;
-        border: 2px solid #F56629;
+        background: map-get($theme-colors, secondary-400);
       }
     }
   }
@@ -97,6 +96,59 @@ h5{
         top: 8px;
         }
     }
+}
+
+.list-style-check{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 56px;
+
+    &:before{
+      content: "";
+      background-image: url("./../images/icon-check.svg");
+      width: 36px;
+      height: 36px;
+      margin-right: 24px;
+      display: inline-block;
+      position: absolute;
+      top: -2px;
+      left: 0;
+    }
+  }
+}
+
+.list-services{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+
+  li{
+    padding: 16px 20px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    img{
+      margin-right: 12px;
+    }
+  }
+
+  .highlighted{
+    background: map-get($theme-colors, secondary-500);
+    color: #fff;
+  }
 }
 
 // ----------------------------- Links -----------------------------
