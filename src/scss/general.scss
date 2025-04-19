@@ -2,7 +2,7 @@ body{
     height: 100vh;
 }
 
-// Headings
+// ----------------------------- Headings -----------------------------
 h1{
   margin-bottom: 24px;
 }
@@ -23,7 +23,7 @@ h5{
   margin-bottom: 16px;
 }
 
-// Buttons
+// ----------------------------- Buttons -----------------------------
 .btn{
     > i{
         margin-right: 8px;
@@ -61,7 +61,7 @@ h5{
     }
   }
 
-
+// ----------------------------- Lists -----------------------------
 .list-no-style{
     list-style-type: none;
     padding: 0;
@@ -99,39 +99,61 @@ h5{
     }
 }
 
+// ----------------------------- Links -----------------------------
 .link-normal{
   text-decoration: none;
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
+  color: map-get($theme-colors, secondary-500);
+  transition: all 0.2s ease-in-out;
 
   &:hover{
-    color: #BD3900;
-
-    &:after{
-      background: #BD3900;
-    }
+    opacity: 0.7;
   }
 
   &:after{
     content: "";
-    background: $primary;
-    height: 2px;
+    background: map-get($theme-colors, secondary-500);
+    height: 1px;
     width: 100%;
     position: absolute;
-    bottom: -2px;
+    bottom: -4px;
     left: 0;
   }
 
-  i{
-    font-size: 20px;
+  img{
+    margin-left: 8px;
     position: relative;
-    top: 2px;
-    line-height: 24px;
+    top: -2px;
   }
 }
 
-select{
-  &:invalid{
-    color: red;
+.link-normal-lg{
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: map-get($theme-colors, secondary-500);
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  line-height: 36px;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  &:after{
+    content: "";
+    background: map-get($theme-colors, secondary-500);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+
+  img{
+    margin-left: 12px;
+    position: relative;
+    top: -2px;
   }
 }
