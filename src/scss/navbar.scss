@@ -1,14 +1,4 @@
 .navbar{
-    padding: 1.5rem 0;
-    
-    @include media-breakpoint-up(lg){
-        padding: 2.5rem 0;
-    }
-
-    @include media-breakpoint-up(xl){
-        padding: 3.5rem 0;
-    }
-
     .navbar-brand{
         margin-left: 0;
         margin-right: 0;
@@ -28,9 +18,10 @@
             }
 
             .nav-link{
-                color: #202020;
+                color: #fff;
                 margin: .25rem 0;
                 padding: .25rem 0;
+                font-weight: 600;
 
                 @include media-breakpoint-up(lg){
                     margin: 0 1.5rem;

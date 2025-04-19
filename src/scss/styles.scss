@@ -21,11 +21,12 @@ $body-color: #777777;
 // );
 
 // Colors
-$primary: #0A2640;
+$primary: #65E4A3;
 $dark: #242424;
 $success: #7FBC3B;
 
 // Headings variables
+$headings-font-family: "Manrope";
 $headings-font-weight: 400;
 $headings-color: #242424;
 $h1-font-size: 48px;
@@ -36,21 +37,22 @@ $h5-font-size: 18px;
 $h6-font-size: 18px;
 
 // Buttons variables
-$btn-font-size: 20px;
+$btn-font-size: 16px;
 $btn-font-weight: 700;
-$btn-padding-y: 16px;
-$btn-padding-x: 32px;
+$btn-padding-y: 8px;
+$btn-padding-x: 40px;
 $btn-line-height: 28px;
 $btn-border-radius: 56px;
 
-// $btn-padding-y-lg: 20px;
-// $btn-padding-x-lg: 20px;
-// $btn-font-size-lg: 1rem;
+$btn-padding-y-lg: 16px;
+$btn-padding-x-lg: 48px;
+$btn-font-size-lg: 20px;
+$btn-border-radius-lg: 56px;
 
-// $btn-padding-y-sm: .625rem;
-// $btn-padding-x-sm: 1rem;
-// $btn-font-size-sm: .8125rem;
-// $btn-border-radius-sm: .5rem;
+// $btn-padding-y-sm: 8px;
+// $btn-padding-x-sm: 40px;
+// $btn-font-size-sm: 16px;
+// $btn-border-radius-sm: 56px;
 
 
 // Inputs variables
@@ -141,6 +143,21 @@ $spacers: (
   88: 5.5rem, 
   92: 92px,
   96: 6rem, 
+  100: 100px,
+  104: 104px,
+  108: 108px,
+  112: 112px,
+  116: 116px, 
+  120: 120px, 
+  124: 124px, 
+  128: 128px, 
+  132: 132px, 
+  136: 136px, 
+  140: 140px, 
+  144: 144px, 
+  148: 148px, 
+  152: 152px, 
+  156: 156px, 
   m1: -1px,  
   m2: -2px,
   m4: -4px,
@@ -176,9 +193,9 @@ $font-weight-bold: 700;
 
 // Colors
 $custom-theme-color: (
-  "primary-500": #0A2640, 
-  "primary-400": #1C3D5B,
-  "secondary-500": #65E4A3,
+  "primary-500": #65E4A3,
+  "secondary-500": #0A2640,
+  "secondary-400": #1C3D5B,
   "grey-100": #F1F1F1,
   "grey-200": #C4C4C4,
   "grey-500": #777777
