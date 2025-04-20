@@ -38,18 +38,14 @@ h5{
     }
 
     &-primary{
-      color: #fff;
-
-        &:hover{
-            color: #ffffff;
-        }
+      color: map-get($theme-colors, secondary-500);
 
       &:active, &:focus-visible{
-        color: #ffffff !important;
+        color: map-get($theme-colors, secondary-500);
       }
 
       &:disabled{
-        color: #ffffff;
+        color: map-get($theme-colors, secondary-500);
       }
     }
 
@@ -213,4 +209,29 @@ h5{
     position: relative;
     top: -2px;
   }
+}
+
+
+// ----------------------------- Backgrounds shapes -----------------------------
+.bg-newsletter{
+  background-image: url("./../images/bg-newsletter.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+// ----------------------------- Inputs, select -----------------------------
+.form-control-white{
+  background: white;
+  color: #000000;
+  border: none;
+
+  &:focus{
+    background: #fff;
+    color: #000;
+  }
+}
+
+// ----------------------------- Other -----------------------------
+.nav-footer-header{
+  
 }
