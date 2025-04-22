@@ -59,6 +59,26 @@ h5{
         background: map-get($theme-colors, secondary-400);
       }
     }
+
+    &-secondary-line{
+      background: none;
+      border: 2px solid map-get($theme-colors, secondary-500);
+      color: map-get($theme-colors, secondary-500);
+
+      &:hover{
+        border: 2px solid map-get($theme-colors, secondary-500);
+      }
+    }
+
+    &-white-line{
+      background: none;
+      border: 2px solid #fff;
+      color: #fff;
+
+      &:hover{
+        border: 2px solid #fff;
+      }
+    }
   }
 
 // ----------------------------- Lists -----------------------------
@@ -233,5 +253,9 @@ h5{
 
 // ----------------------------- Other -----------------------------
 .nav-footer-header{
-  
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #000;
 }

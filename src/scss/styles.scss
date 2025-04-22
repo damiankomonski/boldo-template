@@ -43,6 +43,7 @@ $btn-padding-y: 8px;
 $btn-padding-x: 40px;
 $btn-line-height: 28px;
 $btn-border-radius: 56px;
+$btn-border-width: 2px;
 
 $btn-padding-y-lg: 16px;
 $btn-padding-x-lg: 56px;
@@ -125,6 +126,7 @@ $border-widths: (
 $spacer: 1rem;
 $spacers: (
   0: 0,
+  1: 1px, 
   2: .125rem,
   4: .25rem,
   8: .5rem,
