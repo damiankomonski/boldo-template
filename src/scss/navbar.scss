@@ -2,30 +2,56 @@
     .navbar-brand{
         margin-left: 0;
         margin-right: 0;
+    }
 
-        @include media-breakpoint-up(lg){
-            margin-right: 4rem;
-            margin-left: 1.875rem;
+    .navbar-toggler{
+        &:focus{
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon{
+            background-image: url("./../images/icon-menu.svg");
         }
     }
 
     .navbar-collapse{
-        .navbar-nav{
-            margin-top: 1rem;
+        margin-top: 1rem;
+        background: #fff;
+        border-radius: 16px;
+        padding: 16px;
 
+        @include media-breakpoint-up(lg){
+            background: none;
+            border-radius: 0;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .btn-white{
+            background: map-get($theme-colors, secondary-500);
+            color: #fff;
+
+            @include media-breakpoint-up(lg){
+                background: white;
+                color: map-get($theme-colors, secondary-500);
+            }
+        }
+
+        .navbar-nav{
             @include media-breakpoint-up(lg){
                 margin-top: .25rem;
             }
 
             .nav-link{
-                color: #fff;
+                color: map-get($theme-colors, secondary-500);
                 margin: .25rem 0;
-                padding: .25rem 0;
+                padding: .5rem 0;
                 font-weight: 600;
 
                 @include media-breakpoint-up(lg){
                     margin: 0 1.5rem;
                     padding: 0;
+                    color: #fff;
                 }
 
                 @include media-breakpoint-up(xl){

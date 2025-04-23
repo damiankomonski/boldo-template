@@ -67,6 +67,17 @@ h5{
 
       &:hover{
         border: 2px solid map-get($theme-colors, secondary-500);
+        color: map-get($theme-colors, secondary-500);
+      }
+    }
+
+    &-white{
+      background: #fff;
+      color: map-get($theme-colors, secondary-500);
+
+      &:hover{
+        background: #fff;
+        color: map-get($theme-colors, secondary-500);
       }
     }
 
@@ -77,6 +88,7 @@ h5{
 
       &:hover{
         border: 2px solid #fff;
+        color: #fff;
       }
     }
   }
