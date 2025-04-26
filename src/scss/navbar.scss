@@ -5,6 +5,8 @@
     }
 
     .navbar-toggler{
+        border: none; 
+
         &:focus{
             box-shadow: none;
         }
@@ -30,7 +32,7 @@
         .btn-white{
             background: map-get($theme-colors, secondary-500);
             color: #fff;
-
+            
             @include media-breakpoint-up(lg){
                 background: white;
                 color: map-get($theme-colors, secondary-500);
@@ -42,20 +44,22 @@
                 margin-top: .25rem;
             }
 
-            .nav-link{
-                color: map-get($theme-colors, secondary-500);
-                margin: .25rem 0;
-                padding: .5rem 0;
-                font-weight: 600;
-
-                @include media-breakpoint-up(lg){
-                    margin: 0 1.5rem;
-                    padding: 0;
-                    color: #fff;
-                }
-
-                @include media-breakpoint-up(xl){
-                    margin: 0 2rem;
+            .nav-item{
+                .nav-link{
+                    color: map-get($theme-colors, secondary-500);
+                    margin: 4px 0;
+                    padding: 8px 0;
+                    font-weight: 600;
+    
+                    @include media-breakpoint-up(lg){
+                        margin: 0 1.5rem;
+                        padding: 0;
+                        color: #fff;
+                    }
+    
+                    @include media-breakpoint-up(xl){
+                        margin: 0 2rem;
+                    }
                 }
             }
         }

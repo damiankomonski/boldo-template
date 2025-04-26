@@ -271,3 +271,23 @@ h5{
   margin-bottom: 32px;
   color: #000;
 }
+
+// ----------------------------- Swiper slider -----------------------------
+.swiper {
+  width: 100%;
+  height: 56px;
+
+  .swiper-slide{
+    text-align: center;
+  }
+}
+
+.swiper-opinions{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  display: block;
+}
